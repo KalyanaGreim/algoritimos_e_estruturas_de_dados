@@ -1,11 +1,15 @@
 package org.kaly.algoritimos_avancados;
 
-//resolve o problema do cálculo do fatorial em Java sem usar programação dinâmica,
-// utilizando uma abordagem recursiva
-
-//
+/**
+ * Esta classe resolve o problema do cálculo do fatorial em Java sem usar programação dinâmica,
+ * utilizando uma abordagem recursiva.
+ */
 public class Recursividade {
 
+    /**
+     * Método principal que demonstra o uso da recursividade para calcular fatoriais.
+     * @param args Os argumentos da linha de comando (não utilizado neste exemplo).
+     */
     public static void main(String[] args) {
         int numero1 = 3;
         int numero2 = 7;
@@ -28,6 +32,11 @@ public class Recursividade {
                 "não ser eficiente em tais casos.");
     }
 
+    /**
+     * Calcula o fatorial de um número usando uma abordagem recursiva.
+     * @param numero O número para o qual calcular o fatorial.
+     * @return O resultado do cálculo do fatorial.
+     */
     public static int calcularFatorial(int numero) {
         if (numero == 0 || numero == 1) {
             return 1;
